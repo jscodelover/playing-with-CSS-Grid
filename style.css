@@ -7,3 +7,12 @@
     background-color: #ddd;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap:1em;
+    /*
+    grid-row-gap: 1em;
+    grid-column-gap: 1em; 
+    */
+}
