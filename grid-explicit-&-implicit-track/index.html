@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../assests/style.css">
     <title>Implicit and Explicit Tracks</title>
     <style>
-        .container{
+        body{
+            font-size: 30px;
+        }
+        .container1{
             display:grid;
             grid-template-columns: 200px 100px;
             grid-template-rows: 100px 200px; /* rows after 2 have implicit track */ 
@@ -15,10 +18,34 @@
             /* grid-auto-rows: 100px; */
             grid-auto-rows: 50px 100px; /* implicit rows will have these height */
         }
+        .container2{
+            margin-top: 20px;
+            display:grid;
+            grid-template-columns: 200px 100px;
+            grid-gap:20px;
+            grid-auto-flow:column;
+            grid-auto-columns: 50px 100px; 
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div> 
+       <p> Implicit means that they are created automatically. Explicit means the row and column we have defined.</p>
+        <p>In grid we have <code>grid-auto-flow: row</code> as default which means new element will move to the row by default. But we can 
+        move auto flow to column using <code>grid-auto-flow: column;</code></p>
+        <br />
+        <p>with grid-auto-flow set to row we can set the value of impplicitly created row.</p>
+        <pre>
+            <code>grid-auto-flow: row</code>
+            <code>grid-auto-rows: 100px</code>
+        </pre>
+        <p>with grid-auto-flow set to column we can set the value of impplicitly created column.</p>
+        <pre>
+            <code>grid-auto-flow: column</code>
+            <code>grid-auto-columns: 100px</code>
+        </pre>
+    </div>
+    <div class="container1">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
@@ -28,5 +55,14 @@
         <div class="item">7</div>
         <div class="item">8</div>
     </div>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
 </body>
 </html>
+
+   
