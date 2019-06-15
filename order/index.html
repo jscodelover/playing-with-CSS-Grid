@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assests/style.css">
+    <title>Order</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: 10px;
+        }
+        .logo{
+            grid-column: span 2;
+            order: 2;
+        }
+        .nav{
+            grid-column: span 8;
+            order: 1;
+        }
+        .content{
+            grid-column: span 10;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>Default order property is zero. We can use order property to re-order grid item.</p>
+    <div class="container">
+        <div class="item logo">Logo</div>
+        <div class="item nav">Nav</div>
+        <div class="item content">Content</div>
+    </div>
+</body>
+</html>
