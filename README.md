@@ -8,3 +8,8 @@
 - grid-template-areas
 - grid explicit and implicit tracks
 - grid auto-fill and auto-fit
+- aligment and centering 
+- grid auto flow dense
+- name lines in grid
+- nested grid
+- order 
